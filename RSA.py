@@ -35,11 +35,11 @@ print("1.Encriptar""\n""2.Desencriptar""\n""3.Ver llaves publicas""\n""4.Salir""
 
 opcion = int(input("Su opcion: "))
 
-p = 29
-q = 31
+p = 3
+q = 11
 N = p*q
-e = 13
-d = 517
+e = 7
+d = 3
 clavepublic = (N,e)
 
 while opcion != 4:
@@ -66,7 +66,7 @@ while opcion != 4:
             print("Quiere corregir el mensaje \n 1.Si 2.Salir")
             opcion2 = int(input("Su opcion :"))
     if opcion == 2:
-        desencriptado = desencripta(encripta,N,d)
+        desencriptado = desencripta(cripto,N,d)
         mensaje_densecriptado = decodifi_cadena(desencriptado)
         print(mensaje_densecriptado)
     if opcion == 3:
