@@ -70,13 +70,20 @@ while opcion != 4:
         mensaje_densecriptado = decodifi_cadena(desencriptado)
         print(mensaje_densecriptado)
     if opcion == 3:
+        print("La llave publica es: \n")
         print(clavepublic)
+        print("La llave privada es: \n")
+        print(e)
     if opcion == 4:
         print("Gracias por usar el programa de encriptacion")
         break
-    else:
+    if opcion > 4:
         print("Numero de opcion invalido""\n")
         print("Porfavor elija una opcion correcta")
+        print("1.Encriptar""\n""2.Desencriptar""\n""3.Ver llaves publicas""\n""4.Salir""\n")
+
+        opcion = int(input("Su opcion: "))
+    else:
         print("1.Encriptar""\n""2.Desencriptar""\n""3.Ver llaves publicas""\n""4.Salir""\n")
 
         opcion = int(input("Su opcion: "))
